@@ -1,0 +1,191 @@
+/* === Основні налаштування === */
+body {
+font-family: "Montserrat", sans-serif;
+  background: linear-gradient(to right, #c0d3ff, #e5e5e5 20%, #e5e5e5 80%, #c0d3ff);
+  padding: 40px;
+  margin: 0;
+}
+
+a {
+  color: #2979ff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* === Навігація === */
+nav {
+  background-color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin-bottom: 40px;
+}
+
+nav a {
+  margin: 0 15px;
+  font-weight: 600;
+  color: #161d2a;
+}
+
+/* === Контейнер === */
+.wrapper {
+  max-width: 1200px;
+  margin: auto;
+  background: #fff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* === Заголовки === */
+h1, h2, h3 {
+  font-weight: 700;
+  color: #161d2a;
+}
+
+h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+
+h3 {
+  font-size: 22px;
+  margin-top: 32px;
+}
+
+/* === Параграфи === */
+p {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 16px;
+}
+
+/* === Списки === */
+ul, ol {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+/* === Секції === */
+.section {
+  margin-bottom: 48px;
+}
+
+.section-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #161d2a;
+  margin-bottom: 24px;
+  border-bottom: 2px solid #6d9bf5;
+  display: inline-block;
+  padding-bottom: 4px;
+}
+
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 0;
+  list-style: none;
+}
+
+.card-item {
+  background-color: #f0f4ff;
+  padding: 16px 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  font-weight: 500;
+  color: #161d2a;
+  font-size: 16px;
+  flex: 1 1 calc(50% - 16px); /* 2 колонки */
+  transition: transform 0.2s ease;
+}
+
+.card-item:hover {
+  transform: scale(1.02);
+  background-color: #dbe7ff;
+}
+
+
+/* === Галерея === */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+}
+
+/* === Контактна форма === */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin-top: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.contact-form button {
+  background-color: #2979ff;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #125de3;
+}
+
+
+
+/* === Адаптивність === */
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  .card-list, .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  nav {
+    font-size: 14px;
+  }
+}
